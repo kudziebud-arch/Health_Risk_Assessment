@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>health risk assesment</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="container">
+  <h1>🩺 Health Risk Assessment</h1>
+  <form id="riskForm">
+    <input type="number" id="age" placeholder="Age" required />
+    <input type="number" id="weight" placeholder="Weight (kg)" required />
+    <input type="number" id="height" placeholder="Height (cm)" required />
+
+    <label>Do you smoke?</label>
+    <select id="smoking" required>
+      <option value="">Select</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <label>Physical Activity Level:</label>
+    <select id="activity" required>
+      <option value="">Select</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label>Do you have any chronic illness?</label>
+    <select id="chronic" required>
+      <option value="">Select</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <button type="submit">Assess Risk</button>
+  </form>
+
+  <div class="result-box" id="resultBox">
+    <h2>Result: <span id="riskResult">--</span></h2>
+    <p id="recommendation"></p>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

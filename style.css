@@ -1,0 +1,65 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eef6fa;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1faff;
+  border-left: 6px solid #3498db;
+  border-radius: 10px;
+  display: none;
+}
+
+#riskResult {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#recommendation {
+  margin-top: 10px;
+}
